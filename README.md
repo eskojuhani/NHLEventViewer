@@ -8,4 +8,4 @@ Fetches game events for selected game.
 
 Rest of the project will be just business logic, to see if games' outcomes can be predicted.
 
-![screenshot](https://raw.githubusercontent.com/eskojuhani/NHLEventViewer/NHLEventViewer/Assets.xcassets/Screenshot.imageset/Screenshot.png)
+![screenshot](/NHLEventViewer/NHLEventViewer/Assets.xcassets/Screenshot.imageset/Screenshot.png?raw=true "Screenshot")
