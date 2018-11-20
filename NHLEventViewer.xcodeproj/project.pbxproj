@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		690BF59C219D6A1F008C09FF /* NHLTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BF59B219D6A1F008C09FF /* NHLTypes.swift */; };
+		690BF59F219D6AAB008C09FF /* livefeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 690BF59E219D6AAB008C09FF /* livefeed.json */; };
+		692594D42199758E002A4BF9 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692594D32199758E002A4BF9 /* EventsViewController.swift */; };
+		6941D047219FF2A5006A7C02 /* TestNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941D045219FF2A5006A7C02 /* TestNetworkClient.swift */; };
+		6941D048219FF2A5006A7C02 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941D046219FF2A5006A7C02 /* NetworkClient.swift */; };
+		6941D04A219FF67F006A7C02 /* NHLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941D049219FF67F006A7C02 /* NHLClient.swift */; };
+		6941D04C21A02EA7006A7C02 /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 6941D04B21A02EA7006A7C02 /* schedule.json */; };
+		69554ABE21985DA900410405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69554ABD21985DA900410405 /* AppDelegate.swift */; };
+		69554AC021985DA900410405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69554ABF21985DA900410405 /* Assets.xcassets */; };
+		69554AC321985DA900410405 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69554AC121985DA900410405 /* MainMenu.xib */; };
+		69554ACD21985E8400410405 /* EventsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69554ACC21985E8400410405 /* EventsView.xib */; };
+		69554AD02198600400410405 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69554ACF2198600400410405 /* EventsView.swift */; };
+		69554AD22198679F00410405 /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69554AD12198679F00410405 /* NibLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		690BF59B219D6A1F008C09FF /* NHLTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLTypes.swift; sourceTree = "<group>"; };
+		690BF59E219D6AAB008C09FF /* livefeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = livefeed.json; sourceTree = "<group>"; };
+		690F596E21A3E26700B02F8D /* NHLEventViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NHLEventViewer.entitlements; sourceTree = "<group>"; };
+		692594D32199758E002A4BF9 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		6941D045219FF2A5006A7C02 /* TestNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNetworkClient.swift; sourceTree = "<group>"; };
+		6941D046219FF2A5006A7C02 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		6941D049219FF67F006A7C02 /* NHLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLClient.swift; sourceTree = "<group>"; };
+		6941D04B21A02EA7006A7C02 /* schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
+		69554ABA21985DA900410405 /* NHLEventViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHLEventViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69554ABD21985DA900410405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69554ABF21985DA900410405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69554AC221985DA900410405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		69554AC421985DA900410405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69554ACC21985E8400410405 /* EventsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsView.xib; sourceTree = "<group>"; };
+		69554ACF2198600400410405 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		69554AD12198679F00410405 /* NibLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69554AB721985DA900410405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690BF59D219D6A67008C09FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6941D04B21A02EA7006A7C02 /* schedule.json */,
+				690BF59E219D6AAB008C09FF /* livefeed.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6941D044219FF288006A7C02 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6941D046219FF2A5006A7C02 /* NetworkClient.swift */,
+				6941D045219FF2A5006A7C02 /* TestNetworkClient.swift */,
+				6941D049219FF67F006A7C02 /* NHLClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		69554AB121985DA900410405 = {
+			isa = PBXGroup;
+			children = (
+				69554ABC21985DA900410405 /* NHLEventViewer */,
+				69554ABB21985DA900410405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69554ABB21985DA900410405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69554ABA21985DA900410405 /* NHLEventViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69554ABC21985DA900410405 /* NHLEventViewer */ = {
+			isa = PBXGroup;
+			children = (
+				690F596E21A3E26700B02F8D /* NHLEventViewer.entitlements */,
+				6941D044219FF288006A7C02 /* Network */,
+				690BF59D219D6A67008C09FF /* Resources */,
+				69645DD1219C49AA00D5BB9F /* Models */,
+				69554ACE21985FCC00410405 /* Views */,
+				69554ACB21985E5B00410405 /* Forms */,
+				69554ABD21985DA900410405 /* AppDelegate.swift */,
+				69554ABF21985DA900410405 /* Assets.xcassets */,
+				69554AC421985DA900410405 /* Info.plist */,
+				69554AD12198679F00410405 /* NibLoader.swift */,
+			);
+			path = NHLEventViewer;
+			sourceTree = "<group>";
+		};
+		69554ACB21985E5B00410405 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				69554AC121985DA900410405 /* MainMenu.xib */,
+				69554ACC21985E8400410405 /* EventsView.xib */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		69554ACE21985FCC00410405 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69554ACF2198600400410405 /* EventsView.swift */,
+				692594D32199758E002A4BF9 /* EventsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69645DD1219C49AA00D5BB9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				690BF59B219D6A1F008C09FF /* NHLTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69554AB921985DA900410405 /* NHLEventViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69554AC821985DA900410405 /* Build configuration list for PBXNativeTarget "NHLEventViewer" */;
+			buildPhases = (
+				69554AB621985DA900410405 /* Sources */,
+				69554AB721985DA900410405 /* Frameworks */,
+				69554AB821985DA900410405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHLEventViewer;
+			productName = testNib;
+			productReference = 69554ABA21985DA900410405 /* NHLEventViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69554AB221985DA900410405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Esko Jääskeläinen";
+				TargetAttributes = {
+					69554AB921985DA900410405 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 69554AB521985DA900410405 /* Build configuration list for PBXProject "NHLEventViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69554AB121985DA900410405;
+			productRefGroup = 69554ABB21985DA900410405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69554AB921985DA900410405 /* NHLEventViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69554AB821985DA900410405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69554AC021985DA900410405 /* Assets.xcassets in Resources */,
+				690BF59F219D6AAB008C09FF /* livefeed.json in Resources */,
+				6941D04C21A02EA7006A7C02 /* schedule.json in Resources */,
+				69554AC321985DA900410405 /* MainMenu.xib in Resources */,
+				69554ACD21985E8400410405 /* EventsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69554AB621985DA900410405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690BF59C219D6A1F008C09FF /* NHLTypes.swift in Sources */,
+				6941D047219FF2A5006A7C02 /* TestNetworkClient.swift in Sources */,
+				69554AD22198679F00410405 /* NibLoader.swift in Sources */,
+				6941D048219FF2A5006A7C02 /* NetworkClient.swift in Sources */,
+				69554ABE21985DA900410405 /* AppDelegate.swift in Sources */,
+				69554AD02198600400410405 /* EventsView.swift in Sources */,
+				692594D42199758E002A4BF9 /* EventsViewController.swift in Sources */,
+				6941D04A219FF67F006A7C02 /* NHLClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69554AC121985DA900410405 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69554AC221985DA900410405 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69554AC621985DA900410405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69554AC721985DA900410405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		69554AC921985DA900410405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NHLEventViewer/NHLEventViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9824K478ZV;
+				INFOPLIST_FILE = "$(SRCROOT)/NHLEventViewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.ese.NHLEventViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		69554ACA21985DA900410405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NHLEventViewer/NHLEventViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9824K478ZV;
+				INFOPLIST_FILE = "$(SRCROOT)/NHLEventViewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.ese.NHLEventViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69554AB521985DA900410405 /* Build configuration list for PBXProject "NHLEventViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69554AC621985DA900410405 /* Debug */,
+				69554AC721985DA900410405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69554AC821985DA900410405 /* Build configuration list for PBXNativeTarget "NHLEventViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69554AC921985DA900410405 /* Debug */,
+				69554ACA21985DA900410405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69554AB221985DA900410405 /* Project object */;
+}
