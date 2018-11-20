@@ -146,7 +146,7 @@
 			dependencies = (
 			);
 			name = NHLEventViewer;
-			productName = testNib;
+			productName = NHLEventViewer;
 			productReference = 69554ABA21985DA900410405 /* NHLEventViewer.app */;
 			productType = "com.apple.product-type.application";
 		};

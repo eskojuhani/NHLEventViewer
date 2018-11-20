@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/esko/Documents/xCodeProjects/testNib/NHLEventViewer.xcodeproj">
+      location = "self:/Users/esko/Documents/xCodeProjects/github/NHLEventViewer/NHLEventViewer.xcodeproj">
    </FileRef>
 </Workspace>
